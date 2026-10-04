@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(wsl -d Ubuntu -- bash -lc \"cd ~/laratter && ls app/Jobs 2>/dev/null; ./vendor/bin/sail exec -T laravel.test ps aux | grep -E 'artisan' | grep -v grep\")"
+    ]
+  }
+}
